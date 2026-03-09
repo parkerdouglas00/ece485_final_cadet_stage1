@@ -321,7 +321,7 @@ begin
     mem_write_chip <= '1' when (state = MEMORY and mem_write = '1') else '0';  -- ensure only write to memory during this state
     next_pc <= std_logic_vector(signed(NPC) + signed(imm)) when (state = MEMORY and branch = '1' and alu_result /= x"00000000") else
                std_logic_vector(signed(NPC) + signed(imm)) when (state = MEMORY and jump = '1') else
-               NPC when state = MEMORY and branch = '0' and jump = '0' else
+               NPC when state = MEMORY else
                next_pc;  -- otherwise, keep the same pc until time to update
 
     -------------------------- WB state hardware ---------------------------------------------

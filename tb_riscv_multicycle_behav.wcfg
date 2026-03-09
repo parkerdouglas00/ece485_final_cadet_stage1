@@ -11,14 +11,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="249.201 ns"></ZoomEndTime>
-      <Cursor1Time time="0.000 ns"></Cursor1Time>
+      <ZoomEndTime time="2,492.001 ns"></ZoomEndTime>
+      <Cursor1Time time="591.670 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="161"></NameColumnWidth>
       <ValueColumnWidth column_width="121"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="23" />
+   <WVObjectSize size="32" />
    <wvobject type="logic" fp_name="/tb_riscv_multicycle/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -99,9 +99,33 @@
       <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
       <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
    </wvobject>
+   <wvobject type="array" fp_name="/tb_riscv_multicycle/uut/mem_data">
+      <obj_property name="ElementShortName">mem_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_riscv_multicycle/uut/mem_read">
+      <obj_property name="ElementShortName">mem_read</obj_property>
+      <obj_property name="ObjectShortName">mem_read</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_riscv_multicycle/uut/mem_write">
+      <obj_property name="ElementShortName">mem_write</obj_property>
+      <obj_property name="ObjectShortName">mem_write</obj_property>
+   </wvobject>
    <wvobject type="logic" fp_name="/tb_riscv_multicycle/uut/alu_src">
       <obj_property name="ElementShortName">alu_src</obj_property>
       <obj_property name="ObjectShortName">alu_src</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_riscv_multicycle/uut/branch">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_riscv_multicycle/uut/jump">
+      <obj_property name="ElementShortName">jump</obj_property>
+      <obj_property name="ObjectShortName">jump</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_riscv_multicycle/uut/load_addr">
+      <obj_property name="ElementShortName">load_addr</obj_property>
+      <obj_property name="ObjectShortName">load_addr</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/tb_riscv_multicycle/uut/reg_write">
       <obj_property name="ElementShortName">reg_write</obj_property>
@@ -117,5 +141,21 @@
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="CustomSignalColor">#0000FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_riscv_multicycle/uut/reg_file_inst/display_x6">
+      <obj_property name="ElementShortName">display_x6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">display_x6[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_riscv_multicycle/uut/reg_file_inst/display_x7">
+      <obj_property name="ElementShortName">display_x7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">display_x7[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_riscv_multicycle/uut/reg_file_inst/display_x10">
+      <obj_property name="ElementShortName">display_x10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">display_x10[31:0]</obj_property>
    </wvobject>
 </wave_config>
