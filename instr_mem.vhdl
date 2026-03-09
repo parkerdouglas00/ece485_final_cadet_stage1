@@ -13,6 +13,8 @@ architecture Behavioral of instr_mem is
     type memory_array is array (0 to 255) of STD_LOGIC_VECTOR(31 downto 0);
     signal memory : memory_array := (
         0 => x"00900293", -- addi x5, x0, 9         000000001001 00000 000 00101 0010011
+        1 => x"00429293",   -- subi x5, x5, 4   --  000000000100 00101 001 00101 0010011
+        2 => x"FFC29293",   -- subi x5, x5, -4  --  111111111100 00101 001 00101 0010011
 --        1 => x"<replace with machine code>", -- load_addr x6, array (custom instruction), where array is 0x10000000
 --        2 => x"<replace with machine code>", -- lw x7, 0(x6)           
 --        3 => x"<replace with machine code>", -- loop: addi x6, x6, 4   
